@@ -1,0 +1,45 @@
+body {
+  font-family: 'Do Hyeon', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+/* header */
+header {
+  background-color: orange;
+  margin-top: 50px;
+  width: 700px;
+  height: 800px;
+}
+header .logo_box {
+  width: 200px;
+  margin: 0 auto;
+}
+header .logo_box a {
+  font-size: 40px;
+  display: block;
+  text-align: center;
+}
+
+nav {
+  border: 2px dashed firebrick;
+  height: 40px;
+}
+nav div {
+  display: flex;
+  flex-flow: row nowrap;
+  /*padding: 10px;*/
+  background-color: yellow;
+}
+nav div li {
+  display: block;
+  padding: 5px;
+  height: 20px;
+  margin: 2px;
+}
+nav div li::after {
+  content: '   |';
+  align-items: center;
+}
+nav div li:last-child::after {
+  content: '';
+}
